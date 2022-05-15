@@ -36,6 +36,51 @@
 			]
 		}
 	},
+	"eslintConfig": {
+		"env": {
+			"es2021": true,
+			"node": true,
+			"jest": true
+		},
+		"extends": [
+			"airbnb-base",
+			"plugin:import/errors",
+			"plugin:import/warnings",
+			"plugin:import/typescript",
+			"prettier"
+		],
+		"parser": "@typescript-eslint/parser",
+		"parserOptions": {
+			"ecmaVersion": "latest",
+			"sourceType": "module"
+		},
+		"plugins": [
+			"@typescript-eslint",
+			"prettier"
+		],
+		"rules": {
+			"import/extensions": [
+				"error",
+				"ignorePackages",
+				{
+					"js": "never",
+					"ts": "never"
+				}
+			],
+			"prettier/prettier": "warn"
+		},
+		"globals": {
+			"jest": true
+		}
+	},
+	"lint-staged": {
+		"*.ts": "eslint --cache --fix"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
 	"standard-version": {
 		"types": [
 			{
@@ -100,43 +145,6 @@
 			}
 		]
 	},
-	"eslintConfig": {
-		"env": {
-			"es2021": true,
-			"node": true,
-			"jest": true
-		},
-		"extends": [
-			"airbnb-base",
-			"plugin:import/errors",
-			"plugin:import/warnings",
-			"plugin:import/typescript",
-			"prettier"
-		],
-		"parser": "@typescript-eslint/parser",
-		"parserOptions": {
-			"ecmaVersion": "latest",
-			"sourceType": "module"
-		},
-		"plugins": [
-			"@typescript-eslint",
-			"prettier"
-		],
-		"rules": {
-			"import/extensions": [
-				"error",
-				"ignorePackages",
-				{
-					"js": "never",
-					"ts": "never"
-				}
-			],
-			"prettier/prettier": "warn"
-		},
-		"globals": {
-			"jest": true
-		}
-	},
 	"dependencies": {},
 	"devDependencies": {
 		"@commitlint/cli": "^16.2.4",
@@ -161,13 +169,5 @@
 		"standard-version": "^9.3.2",
 		"ts-jest": "^28.0.2",
 		"typescript": "^4.6.4"
-	},
-	"lint-staged": {
-		"*.ts": "eslint --cache --fix"
-	},
-	"config": {
-		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
-		}
 	}
 }
