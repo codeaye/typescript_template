@@ -1,7 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-function add(a, b) {
-    return a + b;
-}
-exports.default = add;
-//# sourceMappingURL=index.js.map
+"use strict";function a(a,b){return a+b}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=a
