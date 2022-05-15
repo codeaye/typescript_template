@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.4 (2022-05-15)
+
+### 🐞 Bug Fixes
+
+- **package.json:** change to main and types tag to right files ([4ab9f0c](https://github.com/codeaye/typescript_template/commit/4ab9f0cdfdadc1b316e136c04ed095f07f399f24))
+
 ### 0.0.3 (2022-05-15)
 
 ### 🏷 Code Refactoring
