@@ -22,8 +22,6 @@ jobs:
           node-version: 18
           cache: "npm"
       - run: npm ci
-      - name: Run Test Script
-        run: npm test
       - name: Run Release Script
         run: |
           npm run release
