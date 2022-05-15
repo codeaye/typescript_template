@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.6 (2022-05-15)
+
+### 🏷 Code Refactoring
+
+- **eslintignore:** move .eslintignore to package.json ([c777f41](https://github.com/codeaye/typescript_template/commit/c777f41c8fc9c5312d6ce5dcc7de36e94e3ef146))
+
 ### 0.0.5 (2022-05-15)
 
 ### 🐞 Bug Fixes
