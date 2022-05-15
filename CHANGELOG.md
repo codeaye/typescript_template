@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.5 (2022-05-15)
+
+### 🐞 Bug Fixes
+
+- **node.yml:** dont run tests ([3ff674b](https://github.com/codeaye/typescript_template/commit/3ff674b5a416feb8a8571de2dfbc1d363c6f2e56))
+
 ### 0.0.4 (2022-05-15)
 
 ### 🐞 Bug Fixes
